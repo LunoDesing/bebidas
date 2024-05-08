@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="s-maxage=3600">
+    <meta http-equiv="Cache-Control" content="max-age=3600">
+
+
+    <link rel="stylesheet" href="url-to-cdn/splide.min.css">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="estilos/mediaQueries.css">
+    <title>Mi tienda</title>
+</head>
+
+<body>
+
+
+
+    <header class="header">
+
+        <nav class="nav container" id="nav">
+
+            <a href="index.html">
+                <img class="nav__logo" src="assets/imagenes/logo.webp" alt="">
+            </a>
+
+            <div class="nav__icons">
+
+                <a href="#nav">
+                    <img class="nav__open" src="assets/vectores/hamburguesa.svg" alt="">
+                </a>
+
+                <a href="#">
+                    <img class="nav__close" src="assets/vectores/cruz.svg" alt="">
+                </a>
+            </div>
+            <ul class="nav__items">
+
+                <li class="nav__links">
+                    <a class="nav__link" href="#ofertas">Ofertas</a>
+                </li>
+
+                <!-- <li class="nav__links">
+                    <a class="nav__link" href="#vivos">Videos live</a>
+                </li> -->
+
+                <li class="nav__links">
+                    <a class="nav__link" href="#productos">Productos</a>
+                </li>
+                <li class="nav__links">
+                    <a class="nav__link" href="#redes">Mis Redes</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <img class="header__wave" src="assets/vectores/wave.svg" alt="">
+
+    </header>
+    <main>
+
+        <section class="ofertas splide" id="ofertas">
+
+            <h4 class="ofertas__title">Ofertas</h4>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/promo1.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/promo2.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/promo3.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/promo4.webp" alt="">
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+
+
+
+
+        <section class="productos" id="productos">
+
+            <h5 class="productos__title">Elige la categoria que estas buscando</h5>
+            <div class="filters">
+
+
+                <button class="filter-btn active" data-filter="all">Todo</button>
+                <button class="filter-btn" data-filter="category1">Cervezas</button>
+                <button class="filter-btn" data-filter="category2">Vinos</button>
+                <button class="filter-btn" data-filter="category3">Licores</button>
+                <button class="filter-btn" data-filter="category4">Destilados</button>
+                <button class="filter-btn" data-filter="category5">Gaseosas</button>
+            </div>
+
+            
+            <article class="busqueda">
+                <h5 class="busqueda__title">Ingresa el nombre</h5>
+                <input class="busqueda__input" type="text" id="searchInput" placeholder="que buscas...?">
+                <button class="busqueda__button" id="searchButton">Buscar</button>
+            </article>
+
+            <div class="products">
+
+                <!-- --------------------- Cervezas -------------------------- -->
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Cervezas <br> Quilmes</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/cervezas/botella.webp" alt="">
+                    <p class="product__description">1 Litro</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$1.700</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+
+                </div>
+                <div class="product category1">
+                    <h2 class="product__title">Cervezas <br> Stella Artois</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/cervezas/cerveza1.webp" alt="">
+                    <p class="product__description">350cc</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$800</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+                <div class="product category1">
+                    <h2 class="product__title">Cervezas <br> Brahmita</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/cervezas/cerveza3.webp" alt="">
+                    <p class="product__description">350cc</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$650</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+                <div class="product category1">
+                    <h2 class="product__title">Cervezas <br> Patagonia</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/cervezas/cerveza4.webp" alt="">
+                    <p class="product__description">500cc</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$750</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+                <div class="product category1">
+                    <h2 class="product__title">Cervezas <br> Brahma</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/cervezas/cerveza5.webp" alt="">
+                    <p class="product__description">500cc</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$1.900</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+                <div class="product category1">
+                    <h2 class="product__title">Cervezas <br> Stella Artois</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/cervezas/cerveza6.webp" alt="">
+                    <p class="product__description">1 Litro</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$2.100</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                <!-- --------------------- Vinos -------------------------- -->
+
+
+                <div class="product category2">
+                    <h2 class="product__title">Vinos <br> Aduentus</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/vinos/vino1.webp" alt="">
+                    <p class="product__description">1 Litro</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$2.600</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                <div class="product category2">
+                    <h2 class="product__title">Vinos <br> Ameri</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/vinos/vino2.webp" alt="">
+                    <p class="product__description">3/4</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$2.800</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                <div class="product category2">
+                    <h2 class="product__title">Vinos Argento <br> Gualtallary</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/vinos/vino3.webp" alt="">
+                    <p class="product__description">1 Litro</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$2.600</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                <div class="product category2">
+                    <h2 class="product__title">Vinos <br> Doña Paula</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/vinos/vino4.webp" alt="">
+                    <p class="product__description">3/4</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$2.900</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                <div class="product category2">
+                    <h2 class="product__title">Vinos <br> Famiglia Bianchi</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/vinos/vino5.webp" alt="">
+                    <p class="product__description">1 Litro</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$3.000</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                <div class="product category2">
+                    <h2 class="product__title">Vinos <br> Finca Lalanda</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/vinos/vino6.webp" alt="">
+                    <p class="product__description">3/4</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$3.000</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>        
+
+
+                <!-- --------------------- Licores -------------------------- -->
+
+
+                <div class="product category3">
+
+                    <h2 class="product__title">Fernet <br>Caimán</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/licores/licor1.webp" alt="">
+                    <p class="product__description">1 Litro</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$4.800</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                <div class="product category3">
+
+                    <h2 class="product__title">Licores Bar&pubs <br>Blue</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/licores/licor2.webp" alt="">
+                    <p class="product__description">1 Litro</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$3.800</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                <div class="product category3">
+
+                    <h2 class="product__title">Licor <br>Cusenier</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/licores/licor3.webp" alt="">
+                    <p class="product__description">1 Litro</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$4.200</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                <div class="product category3">
+
+                    <h2 class="product__title">Fernet <br>Branca</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/licores/licor4.webp" alt="">
+                    <p class="product__description">1 Litro</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$5.000</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                <div class="product category3">
+
+                    <h2 class="product__title">Fernet <br>Buhero Negro</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/licores/licor5.webp" alt="">
+                    <p class="product__description">750cc</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$5.500</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                <div class="product category3">
+
+                    <h2 class="product__title">Fernet Branca <br>Menta</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/licores/licor6.webp" alt="">
+                    <p class="product__description">1 Litro</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$5.000</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                
+  
+
+
+                <!-- --------------------- Destilados -------------------------- -->
+
+
+
+                <div class="product category4">
+                    <h2 class="product__title">Vodka <br>Absolut</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/destilados/destilados1.webp" alt="">
+                    <p class="product__description">1 Litro</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$3.600</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                <div class="product category4">
+                    <h2 class="product__title">Ron Bacardi <br>Dorado</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/destilados/destilados2.webp" alt="">
+                    <p class="product__description">1 Litro</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$5.600</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                <div class="product category4">
+                    <h2 class="product__title">Ron Bacardi <br>Blanco</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/destilados/destilados3.webp" alt="">
+                    <p class="product__description">750cc</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$5.600</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                <div class="product category4">
+                    <h2 class="product__title">Gin Bombay<br>Sapphire</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/destilados/destilados4.webp" alt="">
+                    <p class="product__description">1 Litro</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$6.600</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                <div class="product category4">
+                    <h2 class="product__title">Vodka NewStyle <br>Sandía</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/destilados/destilados5.webp" alt="">
+                    <p class="product__description">1 Litro</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$3.200</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+                <div class="product category4">
+                    <h2 class="product__title">Vodka <br>Smirnoff</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/destilados/destilados8.webp" alt="">
+                    <p class="product__description">1 Litro</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$3.900</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+
+
+                <!-- --------------------- Gaseosas -------------------------- -->
+
+
+
+                <div class="product category5">
+                    <h2 class="product__title">Gaseosa <br>Sprite</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/gaseosas/gaseosa1.webp" alt="">
+                    <p class="product__description">350cc</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$600</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+                <div class="product category5">
+                    <h2 class="product__title">Soda <br>Torasso</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/gaseosas/gaseosa4.webp" alt="">
+                    <p class="product__description">2 Litros</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$550</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+                <div class="product category5">
+                    <h2 class="product__title">Gaseosa <br>Doble Cola</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/gaseosas/gaseosa5.webp" alt="">
+                    <p class="product__description">2 Litros</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$1.400</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+                <div class="product category5">
+                    <h2 class="product__title">Gaseosa <br>Torasso</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/gaseosas/gaseosa6.webp" alt="">
+                    <p class="product__description">3 Litros</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$2.000</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+                <div class="product category5">
+                    <h2 class="product__title">Gaseosa <br>Pritty</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/gaseosas/gaseosa7.webp" alt="">
+                    <p class="product__description">2 1&#188; Litros</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$1.800</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+                <div class="product category5">
+                    <h2 class="product__title">Gaseosa <br>Sprite</h2>
+                    <img class="img product__img" src="assets/imagenes/productos/gaseosas/gaseosa8.webp" alt="">
+                    <p class="product__description">2 1&#188; Litros</p>
+                    <div class="product__precio">
+                        <div class="product__text1">Precio</div>
+                        <div class="product__text2">$1.900</div>
+                    </div>
+                    <a class="product__footer" href="https://wa.link/wukc3b">
+                        <img class="product__icon" src="assets/vectores/whatsappWHITE.svg" alt="">
+                        <h6 class="product__btn">consultar</h6>
+                    </a>
+                </div>
+              
+
+
+
+            </div>
+
+            <button class="productos__cta" id="loadMoreAll" style="display:none;">Cargar más</button>
+
+        </section>
+        <!-- 
+        <section class="ubicacion">
+            <h4 class="ubicacion__title">¿Dónde estamos?</h4>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.0876738122856!2d-65.20664669999992!3d-26.8371636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d6dc2248763%3A0xd0fd743f18d52725!2sOficina!5e0!3m2!1ses-419!2sar!4v1709547697050!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a class="ubicacion__cta" href="https://maps.app.goo.gl/kzmMPWWSo8YhQu5M7">Ver ubicacion</a>
+        </section> -->
+
+        <!-- <section class="correo">
+
+            <div class="correo__container">
+
+                <article class="correo__izquierda">
+
+                    <h4 class="correo__title">Contactanos</h4>
+
+                    <form class="correo__form" action="index.php" method="post">
+
+                        <input class="correo__input" type="text" id="name" name="name" placeholder="nombre">
+                        <input class="correo__input" type="email" id="email" name="email" placeholder="tu correo">
+                        <textarea class="correo__input correo__input--message" name="message" id="message"
+                            placeholder="tu mensaje"></textarea>
+                        <input class="correo__cta" type="submit" id="enviar" name="enviar" value="enviar">
+
+                    </form>
+
+
+                </article>
+
+                <article class="correo__derecha">
+
+                    <h4 class="correodos__title">Si prefieres, tambien puedes contactarnos por whatsapp</h4>
+
+                    <a class="whatsapp__cta" href="#">
+                        <img class="whatsapp__icon" src="assets/vectores/whatsapp_redondo.svg" alt="">Enviar
+                        consulta</a>
+
+                    <h5 class="correo__horarios">
+                        <b>Horario de atencion:</b> <br> lunes a viernes <br> 9:00 a 13hs - 17:00 a 20:30 <br> sabados
+                        de 9:00 a 13:00hs
+                    </h5>
+
+                    <article class="social">
+                        <h5 class="social__title">Siguenos en nuestras redes</h5>
+                        <div class="social__icons">
+                            <a href=""><img class="social__icon" src="assets/vectores/facebook_redondo.svg" alt=""></a>
+                            <a href=""><img class="social__icon" src="assets/vectores/instagram_redondo.svg" alt=""></a>
+                        </div>
+                    </article>
+
+
+
+
+
+
+
+                </article>
+
+            </div>
+
+        </section> -->
+
+    </main>
+
+    <footer class="footer" id="redes">
+
+        <div class="footer__container">
+
+            <div class="footer__contenido">
+                <img class="footer__img" src="assets/imagenes/logo.webp" alt="">
+                <div class="footer__grupo2">
+                    <h5 class="footer__text">sígueme en mis redes</h5>
+                    <div class="footer__icons">
+                        <img class="footer__icon" src="assets/vectores/facebook_redondo.svg" alt="">
+                        <img class="footer__icon" src="assets/vectores/instagram_redondo.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer__copy">
+                &copy 2024 "House Beer" - todos los derechos reservados - <br>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="javascript/scripts.js"></script>
+</body>
+
+</html>
